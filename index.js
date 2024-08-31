@@ -1,9 +1,9 @@
-window.addEventListener('load', function(){
+function pullDown() {
 
-const pullDownButton = document.getElementById("lists")
-const pullDownParents = document.getElementById("pull-down")
-const pullDownChild = document.querySelectorAll(".pull-down-list")
-const currentList = document.getElementById("current-list")
+  const pullDownButton = document.getElementById("lists")
+  const pullDownParents = document.getElementById("pull-down")
+  const pullDownChild = document.querySelectorAll(".pull-down-list")
+  const currentList = document.getElementById("current-list")
 
 
   pullDownButton.addEventListener('mouseover', function(){
@@ -32,4 +32,6 @@ const currentList = document.getElementById("current-list")
       currentList.innerHTML = value
     })
   })
-})
+}
+
+window.addEventListener('load', pullDown)
