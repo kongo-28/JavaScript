@@ -1,5 +1,6 @@
 window.addEventListener('load', function(){
-const pullDownButton = document.getElementById("lists")
+
+  const pullDownButton = document.getElementById("lists")
 
 pullDownButton.addEventListener('mouseover', function(){
   console.log("mouseover OK")
@@ -9,4 +10,7 @@ pullDownButton.addEventListener('mouseout', function(){
   console.log("mouseout OK")
 })
 
+pullDownButton.addEventListener('click', function() {
+  console.log("click OK")
+})
 })
