@@ -4,11 +4,10 @@ window.addEventListener('load', function(){
 
 pullDownButton.addEventListener('mouseover', function(){
   pullDownButton.setAttribute("style", "background-color:#FFBEDA;")
-  console.log("mouseover OK")
 })
 
 pullDownButton.addEventListener('mouseout', function(){
-  console.log("mouseout OK")
+  pullDownButton.removeAttribute("style")
 })
 
 pullDownButton.addEventListener('click', function() {
