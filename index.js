@@ -3,6 +3,7 @@ window.addEventListener('load', function(){
   const pullDownButton = document.getElementById("lists")
 
 pullDownButton.addEventListener('mouseover', function(){
+  pullDownButton.setAttribute("style", "background-color:#FFBEDA;")
   console.log("mouseover OK")
 })
 
